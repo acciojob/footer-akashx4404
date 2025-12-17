@@ -1,1 +1,92 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  min-width: 180px;
+}
+
+.company-name {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-section p {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Social icons */
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.media-icons {
+  background: #222;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.media-icons:hover {
+  background: #444;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  margin-top: 30px;
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
